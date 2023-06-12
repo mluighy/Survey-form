@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Let me ask you to participate a short survey developing our service.</p>
+    <form id="survey-form"  method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+      <label id="name-label" >Enter your name<input id="name" type="text" required placeholder="your name is coming here" /></label>
+<label id="email-label" >Enter your e-mail<input id="email" type="email" required placeholder="your e-mail is coming here" /></label>
+<label for="number" id="number-label" >Enter your age<input id="number" type="number" min="10" max="120" placeholder="optional" /></label>
+</fieldset>
+<fieldset>
+<label><select id="dropdown" >
+  <option value="" class="dropdown">please choose... </option>
+  <option value="1">Male</option>
+  <option value="2">Female</option>
+</select></label>
+<label>Do you perfer</label>
+<label>classic music<input type="radio" value="C" name="music" class="inline" /></label> 
+<label>pop music<input type="radio" value="P" name="music" class="inline" /></label>
+</fieldset>
+<fieldset>
+<label>Do you like</label>
+<label>cats<input type="checkbox" value="c" class="inline" /></label>
+<label>dogs<input type="checkbox" value="d" class="inline" /></label>
+<textarea placeholder="Tell us your opinion..." rows="6"></textarea>
+</fieldset>
+<input type="submit" id="submit" />
+    </form>  
+  </body>    
+</html>
